@@ -13,7 +13,6 @@ Author URI: glennepomuceno.com
 
 /*-------------- Base --------------*/
 @import "base/bootstrap";
-@import "base/normalize";
 @import "base/base";
 @import "base/ie8";
 @import "base/flaticon";
@@ -24,6 +23,7 @@ Author URI: glennepomuceno.com
 /*-------------- Layout --------------*/
 @import "layout/nav";
 @import "layout/header";
+@import "layout/homepage";
 @import "layout/main";
 @import "layout/footer";
 @import "layout/sidebar";

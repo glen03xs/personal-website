@@ -1,5 +1,45 @@
  /*---------------------------------------------------------------------------------------
   Header Styles
  * --------------------------------------------------------------------------------------*/
+ 
+ /*--------------------------------------------------------------------------------------/*
+  Navigation
+ /*--------------------------------------------------------------------------------------*/
+ .navbar {
+    padding: 16px 0;
+}
 
- .l-header {}
+.custom-navbar {
+     background: transparent;
+     border-width: 0;
+     @include transition($what: all, $time: .4s, $how: ease-in-out);
+}
+.main-menu {
+    text-transform: uppercase;
+    margin-top: 10px;
+    float: right;
+    color: #fff;
+
+    .nav.navbar-nav {
+        
+
+        li {
+           font-weight: 500;
+           font-family: 'Lato';
+           font-size: 0.875rem;
+           font-weight: 600;
+
+           a {
+            color: #fff;
+           }
+
+           &:hover {
+               background: transparent;
+           }
+        }
+    }
+    
+    button {
+        margin: 2px 0 0 12px;
+    }
+}

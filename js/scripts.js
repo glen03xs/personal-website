@@ -3,11 +3,11 @@
  * Main JS Functionality
  * ----------------------------------------------------------------------------------------
  */
-
 $(document).ready(function() {
-
+    var typed = new Typed('.element', {
+        stringsElement: '#typed-strings'
+      });
 });
-
 
 
 

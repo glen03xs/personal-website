@@ -12,12 +12,14 @@
 
         <!--Stylesheets-->
         <!-- <link rel="stylesheet" href="css/flaticon.css"> -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans:400,700" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
+
 
     </head>
     <body>
         <!-- Header Logo + Menu -->
-        <header class="navbar custom-navbar fixed-navbar">
+        <header class="navbar custom-navbar navbar-fixed-top">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-4 col-xs-12">
@@ -30,7 +32,7 @@
                                     <span class="icon-bar"></span>
                                 </button>
                             </div> <!--end navbar-header-->
-                            <a class="theme-color" href="index.html"><img src="img/logo.png" alt=""></a> <!--== logo ==-->
+                            <a href="index.html"><img src="img/logo.png" alt=""></a> <!--== logo ==-->
                         </div> <!--end logo-->
                     </div> <!--end col-md-3 -->
 
@@ -45,7 +47,7 @@
                                     <li><a class="smoth-scroll theme-color" href="#blog">Blog</a></li>
                                     <li><a class="smoth-scroll theme-color" href="#contact">Contact</a></li>
                                 </ul>
-                                <button class="btn btn-main">Hire Me</button>
+                                <a class="btn btn-main-cta">Hire Me</a>
                             </div> <!--end navbar-collapse-->
                         </nav>
                     </div> <!--end col-md-9-->
@@ -62,6 +64,10 @@
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <div class="welcome-text">
                                     <h1>Glen Nepomuceno</h1>
+                                    <h3>Front-end Developer | WordPress Developer</h3>
+                                    <!-- <h3 class="typewrite" data-period="2000" data-type='[ "Front-end Developer", "WordPress Developer"]'>
+                                        <span class="wrap"></span>
+                                    </h3> -->
                                     <div class="element"></div> <!--end element-->
                                     </div> <!--end welcome-text-->
                                     <hr class="hr-welcome">
@@ -88,9 +94,11 @@
 
         <section>
             <div class="intro-services">
-                <div class="intro-tagline">
-                    <p>Hi, my name is Glen. I build  <strong>engaging</strong> and <strong>useful</strong> website for a living.  These are the things I can help you with:</p>
-                </div> <!--end intro-tagline-->
+                <div class="container">
+                    <div class="intro-tagline">
+                        <p>Hi, my name is Glen. I build  <strong>engaging</strong> and <strong>useful</strong> website for a living.  These are the things I can help you with:</p>
+                    </div> <!--end intro-tagline-->
+                </div> <!--end container-->
             </div> <!--end intro-services-->
             <div class="services-wrapper">
                 <div class="container">
@@ -100,29 +108,57 @@
                                 <div class="circle-bg">
                                     <img src="img/icons/html5.png" alt="">
                                 </div> <!--end circle-bg-->
+                                <div class="services-content">
+                                    <h4>Clean HMTL5 Code</h4>
+                                    <div class="hr-services html5"></div> <!--end hr-services-->
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.
+                                    </p>
+                                </div> <!--end services-content-->
                             </div>
                         </div> <!--end col-md-3-->
                         <div class="col-md-3">
-                                <div class="services">
-                                    <div class="circle-bg">
-                                        <img src="img/icons/css3.png" alt="">
-                                    </div> <!--end circle-bg-->
+                            <div class="services">
+                                <div class="circle-bg">
+                                    <img src="img/icons/css3.png" alt="">
+                                </div> <!--end circle-bg-->
+                                <div class="services-content">
+                                    <h4>Modern CSS3 Styles</h4>
+                                    <div class="hr-services css3"></div> <!--end hr-services-->
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.
+                                    </p>
+                                </div> <!--end services-content-->
                                 </div>
-                            </div> <!--end col-md-3-->
-                            <div class="col-md-3">
-                                    <div class="services">
-                                        <div class="circle-bg">
-                                            <img src="img/icons/responsive.png" alt="">
-                                        </div> <!--end circle-bg-->
-                                    </div>
-                                </div> <!--end col-md-3-->
-                                <div class="col-md-3">
-                                        <div class="services">
-                                            <div class="circle-bg">
-                                                <img src="img/icons/wordpress.png" alt="">
-                                            </div> <!--end circle-bg-->
-                                        </div>
-                                    </div> <!--end col-md-3-->
+                        </div> <!--end col-md-3-->
+                        <div class="col-md-3">
+                            <div class="services">
+                                <div class="circle-bg">
+                                    <img src="img/icons/responsive.png" alt="">
+                                </div> <!--end circle-bg-->
+                                <div class="services-content">
+                                    <h4>Responsive Design</h4>
+                                    <div class="hr-services responsive"></div> <!--end hr-services-->
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.
+                                    </p>
+                                </div> <!--end services-content-->
+                            </div>
+                        </div> <!--end col-md-3-->
+                        <div class="col-md-3">
+                            <div class="services">
+                                <div class="circle-bg">
+                                    <img src="img/icons/wordpress.png" alt="">
+                                </div> <!--end circle-bg-->
+                                <div class="services-content">
+                                    <h4>Custom WordPress Theme</h4>
+                                    <div class="hr-services wordpress"></div> <!--end hr-services-->
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.
+                                    </p>
+                                </div> <!--end services-content-->
+                            </div>
+                        </div> <!--end col-md-3-->
                     </div> <!--end row-->
                 </div> <!--end container-->
             </div> <!--end services-wrapper-->
@@ -142,8 +178,8 @@
                                 <h2>About Me</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                <button class="btn btn-main">View CV</button>
-                                <button class="btn btn-main">Download CV</button>
+                                <a class="btn btn-main">View CV</a>
+                                <a class="btn btn-main-reverse">Download CV</a>
                             </div> <!--end about-->
                         </div><!--end col-md-7-->
                     </div><!--end row-->
@@ -155,24 +191,24 @@
             <div class="works-area">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-sm-12 col-xs-12">
                             <div class="works-text">
-                                <h2>Works</h2>
-                                <button class="btn btn-main">View All</button>
+                                <div class="works-title"><h2>Latest Works</h2></div><!--works-title end -->
+                                <!-- <div class="works-button"><a class="btn btn-main">View All</a></div> end works-button  -->
                             </div>
                         </div><!--end col-md-4-->
-                        <div class="col-md-8">
+                        <div class="col-md-8 col-sm-12 col-xs-12">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6 col-xs-12 no-padding-hor">
                                     <img src="img/portfolio-placeholder-1.jpg" alt="">
                                 </div><!--end col-md-6-->
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6 col-xs-12 no-padding-hor">
                                     <img src="img/portfolio-placeholder-2.jpg" alt="">       
                                 </div><!--end col-md-6-->
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6 col-xs-12 no-padding-hor">
                                     <img src="img/portfolio-placeholder-2.jpg" alt="">       
                                 </div><!--end col-md-6-->
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-6 col-xs-12 no-padding-hor">
                                     <img src="img/portfolio-placeholder-1.jpg" alt="">
                                 </div><!--end col-md-6-->
                             </div>
@@ -185,24 +221,30 @@
         <section>
             <div class="contact-area">
                 <div class="container">
-                    <h2>Contact Me</h2>
-                    <h5>I'm available for full-time work!</h5>
+                    <div class="header-contact">
+                        <h2>Contact Me</h2>
+                        <h5>I'm available for full-time work!</h5>
+                    </div> <!--end header-contact-->
                     <div class="row">
-                        <div class="col-md-6">
-                            <input type="text" name="quote-name" id="contact-name" />
-                        </div><!--end col-md-6-->
-                        <div class="col-md-6">
-                            <input type="email" name="quote-email" id="contact-email" />
-                            </div><!--end col-md-6-->
-                        <div class="col-md-12">
-                            <input type="text" name="quote-subject" id="contact-subject" />
-                        </div><!--end col-md-12-->
-                        <div class="col-md-12">
-                            <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
-                        </div><!--end col-md-12-->
-                        <div class="cta">
-                                <input type="submit" class="btn btn-main" value="Send Message" />
-                        </div> <!--end cta-->
+                        <div class="contact-form">
+                            <form action="">
+                                <div class="col-md-6 adjust-r-padding">
+                                    <input type="text" name="quote-name" id="contact-name" placeholder="Full Name" />
+                                </div><!--end col-md-6-->
+                                <div class="col-md-6 adjust-l-padding">
+                                    <input type="email" name="quote-email" id="contact-email" placeholder="Email Address" />
+                                    </div><!--end col-md-6-->
+                                <div class="col-md-12">
+                                    <input type="text" name="quote-subject" id="contact-subject" placeholder="Subject" />
+                                </div><!--end col-md-12-->
+                                <div class="col-md-12">
+                                    <textarea name="contact-message" id="contact-message" cols="30" rows="8" placeholder="Message"></textarea>
+                                </div><!--end col-md-12-->
+                                <div class="cta">
+                                    <input type="submit" class="btn btn-contact-submit" value="Send Message" />
+                                </div> <!--end cta-->
+                            </form>
+                        </div> <!--end contact-form-->
                     </div><!--end row-->
                 </div><!--end container-->
             </div> <!--end contact-area-->
@@ -228,17 +270,17 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="copy">
-                                <p>Copyright (c) 2017 | glennepomuceno.com</p>    
-                            </div> <!--end copy -->
-                        </div><!--end col-md-6-->
-                        <div class="col-md-6">
                             <div class="footer-contact">
                                 <ul class="inline-list">
                                     <li><a href=""><i class="flaticon-email"></i> hello@glennepomuceno.com</a></li>
                                     <li><a href=""><i class="flaticon-skype"></i> glen03xs</a></li>
                                 </ul>
-                            </div><!--end footer-contact-->
+                            </div><!--end footer-contact-->                            
+                        </div><!--end col-md-6-->
+                        <div class="col-md-6">
+                            <div class="copy">
+                                <p>&copy; Copyright 2017 | glennepomuceno.com</p>    
+                            </div> <!--end copy -->
                         </div><!--end col-md-6-->
                     </div><!--end row-->
                 </div><!--end container-->
@@ -247,6 +289,12 @@
 
 
 <!--Scripts-->
-        <script></script>
+        <script src="js/typed.js"></script>
+        <script>
+            var typed = new Typed('.element', {
+                stringsElement: '#typed-strings'
+            });
+        </script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>

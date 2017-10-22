@@ -2,4 +2,65 @@
 * Footer
 * --------------------------------------------------------------------------------------*/
 
- .l-footer {}
+ footer {
+     background: #222222;
+     color: #fff;
+     padding: $baseline*2 0 0;
+     text-align: center;
+
+    .footer-contact {
+        text-align: left;
+
+        ul {
+            margin: 0;
+        
+            li:after {
+                content: '|';
+                color: $color-1;
+                margin: 0 14px 0 12px;
+                font-size: 1rem;
+            }
+
+            i:first-child:before {
+                margin-left: 0;
+            }
+
+            li:last-child:after {
+                content: none;
+            }
+        }
+    }
+     
+    .copy {
+         text-align: right;
+    }
+
+    .social-footer {
+         margin: 24px 0 20px;
+
+        ul {
+             margin: 0;
+
+             li {
+                margin: 0 6px;
+
+                i {
+                    color: #fff;
+                 
+                    &:before {
+                        font-size: 24px;
+                    }
+
+                    &:hover {
+                        color: $color-1;
+                        @include transition($what: all, $time: .2s, $how: ease-in);
+                    }
+                }
+            }
+        }
+    }
+
+    hr {
+        margin: 18px 0;
+    }
+ }

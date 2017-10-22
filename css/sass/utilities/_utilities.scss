@@ -14,13 +14,43 @@
      text-align: center;
  }
 
- .inline-list {
+  .inline-list {
     list-style: none;
+    margin-left: 0;
     padding-left: 0;
 
      li {
-         display: inline;
+        display: inline;
+
+        i::before {
+            margin: 0 10px;
+        }
      }
  }
 
+//Transition
+ @mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+    -webkit-transition: $what $time $how; /* Chrome10+,Safari5.1+ */ 
+    -moz-transition:    $what $time $how; /* FF3.6+ */ 
+    -ms-transition:     $what $time $how; /* IE10+ */
+    -o-transition:      $what $time $how; /* Opera 11.10+ */
+    transition:         $what $time $how; /* Old browsers */
+}
 
+//Text Shadow
+@mixin text-shadow($h-len: 2px, $v-len: 2px, $b-rad: 2px, $c-sha: rgb(44, 44, 44)) {
+    -webkit-text-shadow: $h-len $v-len $b-rad $c-sha; /* Chrome10+,Safari5.1+ */
+    -moz-text-shadow:    $h-len $v-len $b-rad $c-sha; /* FF3.6+ */
+    -ms-text-shadow:     $h-len $v-len $b-rad $c-sha; /* IE10+ */
+    -o-text-shadow:      $h-len $v-len $b-rad $c-sha; /* Opera 11.10+ */
+    text-shadow:         $h-len $v-len $b-rad $c-sha; /* Old browsers */
+}
+
+/** Box Shadow **/
+@mixin box-shadow($h-len: 0px, $v-len: 0px, $b-rad: 16px, $s-rad: 1px, $c-sha: rgb(113, 113, 113)) {
+    -webkit-box-shadow: $h-len $v-len $b-rad $s-rad $c-sha; /* Chrome10+,Safari5.1+ */
+    -moz-box-shadow:    $h-len $v-len $b-rad $s-rad $c-sha; /* FF3.6+ */
+    -ms-box-shadow:     $h-len $v-len $b-rad $s-rad $c-sha; /* IE10+ */
+    -o-box-shadow:      $h-len $v-len $b-rad $s-rad $c-sha; /* Opera 11.10+ */
+    box-shadow:         $h-len $v-len $b-rad $s-rad $c-sha; /* Old browsers */
+}
