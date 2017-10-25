@@ -15,12 +15,18 @@
 
     textarea {
       padding: 14px 12px 0;
+      resize: none;
     }
 
     input,textarea {
       border: 1px solid #8d8d8d;
       border-radius: 0;
       line-height: 1.25rem;     
+    }
+
+    input::placeholder, textarea::placeholder {
+      font-family: $font-1;
+      color: rgb(141, 141, 141);
     }
     
     input[type=submit] {
@@ -29,6 +35,7 @@
       margin-top: 2em;
       width: initial;
     }
+    
   }
 }
 
@@ -54,3 +61,18 @@ form {
     }
   }
 }
+
+
+/* Medium devices (desktops, 991px and up) */
+@media (max-width: 991px) { 
+
+  .contact-form {
+    padding: 1.5em $baseline*5 0;
+  }
+
+
+}
+
+
+
+

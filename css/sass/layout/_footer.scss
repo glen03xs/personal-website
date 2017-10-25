@@ -5,14 +5,13 @@
  footer {
      background: #222222;
      color: #fff;
-     padding: $baseline*2 0 0;
+     padding: $baseline*2 0 1em;
      text-align: center;
 
     .footer-contact {
-        text-align: left;
 
         ul {
-            margin: 0;
+            margin-bottom: 1.5em;
         
             li:after {
                 content: '|';
@@ -28,11 +27,23 @@
             li:last-child:after {
                 content: none;
             }
+
+            a {
+                font-size: 1.35rem;
+                font-weight: 400;
+            }
+         
         }
     }
      
     .copy {
-         text-align: right;
+         text-align: center;
+
+         p {
+             margin-bottom: 0;
+             font-size: 1rem;
+             font-family: $font-1;
+         }
     }
 
     .social-footer {
@@ -64,3 +75,4 @@
         margin: 18px 0;
     }
  }
+
