@@ -29,6 +29,10 @@
     &:hover{
         background: $color-1;
     }
+
+    &:focus {
+        color: $color-1;
+    }
 }
 
 .btn-main-reverse {

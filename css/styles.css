@@ -5797,7 +5797,7 @@ a {
     text-decoration: none;
     cursor: pointer; }
   a:visited {
-    color: inherit; }
+    color: #097ecb; }
 
 blockquote {
   color: #000;
@@ -8403,7 +8403,9 @@ textarea {
     .main-menu .nav.navbar-nav li a {
       color: #097ecb; }
       .main-menu .nav.navbar-nav li a:hover {
-        color: #097ecb; } }
+        color: #097ecb; }
+    .main-menu .nav.navbar-nav li .btn-main-cta:visited {
+      color: #097ecb; } }
 .welcome-section {
   height: 100%; }
 
@@ -8551,6 +8553,7 @@ textarea {
 /*-------------- Services --------------*/
 .intro-services {
   background: #d8dfeb;
+  margin-top: 3.75em;
   padding: 72px 0;
   text-align: center; }
   .intro-services .intro-tagline {
@@ -8932,6 +8935,8 @@ footer {
   margin-left: 14px; }
   .btn-main-cta:hover {
     background: #097ecb; }
+  .btn-main-cta:focus {
+    color: #097ecb; }
 
 .btn-main-reverse {
   border: 2px solid #097ecb;

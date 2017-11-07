@@ -127,6 +127,13 @@
                         color: $color-1;
                     }
                 }
+
+                .btn-main-cta {
+
+                    &:visited {
+                        color: $color-1;
+                    }
+                }
             }    
         }
     }
