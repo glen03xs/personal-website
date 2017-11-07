@@ -14,6 +14,10 @@ body {
     font: #{$base-font-size}/#{$baseline} $font-1;
 }
 
+html,
+body {
+	height: 100%
+}
 
 /*-------------- Typography --------------*/
 /** Heading **/
@@ -296,3 +300,9 @@ textarea {
 	width: 100%;
 }
 
+ /* Small devices (Mobile, 580px and down) */
+ @media (max-width: 580px) {
+	 h2 {
+		 font-size: 2rem;
+	 }
+ }

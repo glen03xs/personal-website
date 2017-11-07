@@ -73,6 +73,26 @@ form {
 
 }
 
+/* Large devices (Mobile, 640px and down) */
+@media (max-width: 640px) {
 
+  .contact-form {
+    padding: 1.5em $baseline*3 0;
+  }
+}
 
+/* Large devices (Mobile, 480px and down) */
+@media (max-width: 480px) {
+  
+  .contact-form {
+    padding: 1.5em $baseline*1 0;
+  }
+}
 
+/* Large devices (Mobile, 360px and down) */
+@media (max-width: 360px) {
+  
+  .contact-form {
+    padding: 1.5em 0;
+  }
+}

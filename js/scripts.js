@@ -28,7 +28,7 @@ $(document).ready(function() {
         }, 1000);
         event.preventDefault();
         });
-    });  
+    });
 
 /*-------------- Parallax --------------*/
     $(window).stellar({
@@ -38,22 +38,36 @@ $(document).ready(function() {
     });
 
 /*-------------- Scroll Spy --------------*/
-    $(body).scrollspy({
+    $('body').scrollspy({
         target : ".navbar-collapse",
         offset : 95
     });
 
+/*-------------- BG Flickering Fix for Mobile --------------*/    
+
+    var bg = jQuery("#home");
+
+    function resizeBackground() {
+        bg.height(jQuery(window).height() + 60);
+    }
+    resizeBackground();
+
+
+    $('.work-popup').magnificPopup({type:'image'});
+
+/*-------------- Typed --------------*/
     var element = $(".element");
     
-            $(function() {
-                element.typed({
-                    strings: ["Web Designer.", "Graphic Designer.", "Freelancer."],
-                    typeSpeed: 100,
-                    loop: true,
-                });
-            });
+    $(function() {
+        element.typed({
+            strings: ["Front-end Developer", "WordPress Developer"],
+            typeSpeed: 100,
+            loop: true,
+        });
+    });
 
 });
+
 
 
 

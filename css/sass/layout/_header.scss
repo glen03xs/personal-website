@@ -57,17 +57,21 @@
     .nav.navbar-nav {
         
         li {
-           font-weight: 500;
-           font-family: 'Lato';
-           font-size: 0.875rem;
-           font-weight: 600;
 
            a {
             color: #fff;
+            font-size: 0.8rem;
+            font-family: 'Lato', sans-serif;;
+            font-weight: 600;
+            padding: 14px 10px;
             
                 &:hover {
                     background: none;
                     color: $color-1;
+                }
+
+                &:focus {
+                    background: none; 
                 }
             }
         }
@@ -81,4 +85,49 @@
         margin: 2px 0 0 12px;
     }
     
+}
+
+/* Large devices (sm desktops, 767px and down) */
+@media (max-width: 767px) {
+
+    .custom-navbar {
+        background: #fff;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .navbar-toggle {
+        float: none;
+        margin-right: 0;
+
+        .icon-bar {
+            background: #444 none repeat scroll 0 0;
+        }
+    }
+
+    .navbar-header {
+        display: inline-block;
+        float: right;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .main-menu {
+        float: none;
+        text-align: center;
+        
+        .nav.navbar-nav {
+            
+            li {
+    
+                a {
+                    color: $color-1;
+
+                    &:hover {
+                        color: $color-1;
+                    }
+                }
+            }    
+        }
+    }
 }

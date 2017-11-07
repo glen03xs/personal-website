@@ -36,8 +36,24 @@
     background: $color-1;
     color: #fff;
 
+
     &:hover {
         background: transparent;
         color: $color-1;
+    }
+}
+
+/* Large devices (sm desktops, 767px and down) */
+@media (max-width: 767px) {
+    .btn-main-cta {
+        margin: 14px 0 0;
+    }
+
+}
+
+/* Mobile devices (Mobile, 339px and down) */
+@media (max-width: 337px) {
+    .btn-main-reverse  {
+        margin-top: 10px;
     }
 }

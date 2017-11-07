@@ -12,7 +12,8 @@
 
         <!--Stylesheets-->
         <!-- <link rel="stylesheet" href="css/flaticon.css"> -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Noto+Sans:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500i,400,700|Noto+Sans:400,700|Lato" rel="stylesheet">
+        <link href="css/magnific-popup.css" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
 
         <script src="js/jquery-2.1.4.min.js"></script>
@@ -41,8 +42,8 @@
                     <div class="col-md-9 col-sm-10 col-xs-12">
                         <nav class="main-menu">
                             <div class="navbar-collapse collapse">
-                                <ul class="nav navbar-nav"> <!--== manin menu ==-->
-                                    <li class="active"><a class="smoth-scroll" href="#home">Home</a></li>
+                                <ul class="nav navbar-nav"> <!--== main menu ==-->
+                                    <li><a class="smoth-scroll" href="#home">Home</a></li>
                                     <li><a class="smoth-scroll" href="#services">Service</a></li>
                                     <li><a class="smoth-scroll" href="#about">About</a></li>
                                     <li><a class="smoth-scroll" href="#work">Works</a></li>
@@ -57,7 +58,7 @@
             </div> <!--end container-->
         </header> 
 
-        <section>
+        <section class="welcome-section">
             <div class="welcome-area" id="home" data-stellar-background-ratio="0.6" style="background-image: url(img/welcome-bg-placeholder.jpg);" >
                 <div class="welcome-table">
                     <div class="welcome-cell">
@@ -66,25 +67,21 @@
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <div class="welcome-text">
                                     <h1>Glen Nepomuceno</h1>
-                                    <h3>Front-end Developer | WordPress Developer</h3>
-                                    <!-- <h3 class="typewrite" data-period="2000" data-type='[ "Front-end Developer", "WordPress Developer"]'>
-                                        <span class="wrap"></span>
-                                    </h3> -->
                                     <div class="element"></div> <!--end element-->
                                     </div> <!--end welcome-text-->
                                     <hr class="hr-welcome">
                                     <div class="social-main">
                                         <ul class="inline-list">
-                                            <li><a href="#"><i class="flaticon-github-character"></i></a></li>
-                                            <li><a href="#"><i class="flaticon-skype"></i></a></li>
-                                            <li><a href="#"><i class="flaticon-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="flaticon-facebook"></i></a></li>
-                                            <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         </ul>
                                     </div> <!--end social-main-->
 
                                     <div class="home-arrow">
-                                        <a href="#about" class="smoth-scroll theme-color"><i class="fa fa-angle-double-down"></i></a>
+                                        <a href="#services" class="smoth-scroll theme-color"><i class="fa fa-angle-double-down"></i></a>
                                     </div> <!--end home-arrow-->
                                 </div> <!--end col-md-12-->
                         </div> <!--end row-->
@@ -148,7 +145,7 @@
                             </div>
                         </div> <!--end col-md-3-->
                         <div class="col-md-3">
-                            <div class="services">
+                            <div class="services no-brdr">
                                 <div class="circle-bg">
                                     <img src="img/icons/wordpress.png" alt="">
                                 </div> <!--end circle-bg-->
@@ -189,8 +186,8 @@
             </div> <!--end about-area-->
         </section>
 
-        <section>
-            <div class="works-area" id="work">
+        <section  id="work">
+            <div class="works-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-sm-12 col-xs-12">
@@ -211,7 +208,7 @@
                                                         <div class="hover-content">
                                                             <h4>Project Name</h4>
                                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                                            <a class="work-popup theme-color" href="assets/img/work/1.jpg"><i class="fa fa-search-plus"></i></a>
+                                                            <a class="work-popup theme-color" href="img/portfolio-placeholder-1.jpg"><i class="fa fa-search-plus"></i></a>
                                                             <a class="work-link theme-color" href="#"><i class="fa fa-link"></i></a>
                                                         </div> <!--end hover-content-->
                                                     </div> <!--end work-tablecell-->
@@ -312,20 +309,20 @@
 
         <footer>
             <div class="footer-top">
-                <img src="img/logo.png" alt="">
+                <a href="#home"><img src="img/logo.png" alt=""></a>
                 <div class="social-footer">
-                        <ul class="inline-list">
-                            <li><a href="#"><i class="flaticon-github-character"></i></a></li>
-                            <li><a href="#"><i class="flaticon-skype"></i></a></li>
-                            <li><a href="#"><i class="flaticon-linkedin"></i></a></li>
-                            <li><a href="#"><i class="flaticon-facebook"></i></a></li>
-                            <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-github"></i></a></li>
+                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         </ul>
                     </div> <!--end social-footer-->
                     <div class="footer-contact">
-                        <ul class="inline-list">
-                            <li><a href=""><i class="flaticon-email"></i> hello@glennepomuceno.com</a></li>
-                            <li><a href=""><i class="flaticon-skype"></i> glen03xs</a></li>
+                        <ul>
+                            <li><a href=""><i class="fa fa-envelope"></i> hello@glennepomuceno.com</a></li>
+                            <li><a href=""><i class="fa fa-skype"></i> glen03xs</a></li>
                         </ul>
                     </div><!--end footer-contact-->    
             </div> <!--end footer-top-->
@@ -344,6 +341,9 @@
         <script src="js/plugins.js"></script>
         <script src="js/typed.js"></script>
         <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/validator.min.js"></script>
         <!-- <script>
             var typed = new Typed('.element', {
                 stringsElement: '#typed-strings'

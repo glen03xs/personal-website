@@ -32,6 +32,4 @@ gulp.task('sass', function() {
 
 // Create the default task that can be called using 'gulp'.
 // The task will process SASS, run browser-sync and start watching for changes.
-gulp.task('default', ['sass', 'browser-sync'], function() {
-    gulp.watch("css/sass/**/*.scss", ['sass']);
-})
+li
